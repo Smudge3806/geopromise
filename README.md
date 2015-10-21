@@ -1,5 +1,5 @@
-# geopromise
-A Promise Wrapper for GeoLocation API
+# GeoPromise
+A Promise Wrapper for the GeoLocation API
 
 ## Usage
 
