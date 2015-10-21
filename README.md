@@ -19,7 +19,7 @@ options: Optional `<Object>`. Uses the [PositionOptions interface](https://devel
 
 #####Syntax
 ```javascript
-GeoPromise.getCurrentPosition({ enableHighAccuracy: true }).done(function(CurrentPosition) {
+GeoPromise.getCurrentPosition({ enableHighAccuracy: true }).then(function(CurrentPosition) {
   let targetPosition = {
     lat: 15,
     long: 37
@@ -54,7 +54,7 @@ GeoPromise.watchPosition({ enableHighAccuracy: true });
 
 ```javascript
 GeoPromise.watchPosition({ enableHighAccuracy: true })
-  .done(function(watchID) {
+  .then(function(watchID) {
     requestIdleCallback(function() {
       window.addEventListener('Geolocation.Update', function(ev) {
         // We have movement
@@ -78,7 +78,7 @@ ID: (integer)
 var watchID;
 
 GeoPromise.watchPosition({ enableHighAccuracy: true })
-  .done(function(id) {
+  .then(function(id) {
     watchID = id;
   });
 
@@ -118,7 +118,7 @@ options: Optional `<Object>`. Uses the [PositionOptions interface](https://devel
 ```javascript
 var geolocation = new GeoPromise({ enableHighAccuracy: true });
 
-geolocation.getCurrentPosition().done(function(CurrentPosition) {
+geolocation.getCurrentPosition().then(function(CurrentPosition) {
   let targetPosition = {
     lat: 15,
     long: 37
