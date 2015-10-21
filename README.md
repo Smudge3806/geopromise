@@ -4,7 +4,7 @@ A Promise Wrapper for GeoLocation API
 ## Usage
 
 GeoPromise has both static and prototype methods.
-
+- - -
 ### Static Interface
 
 #### getCurrentPosition
@@ -86,7 +86,7 @@ GeoPromise.clearWatch(watchID).then(function() {
   watchID = null;
 });
 ```
-
+- - -
 ### Prototype Interface
 
 #### Constructor
