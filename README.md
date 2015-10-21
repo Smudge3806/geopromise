@@ -192,8 +192,4 @@ geolocation.watchPosition()
       window.addEventListener('Geolocation.Update', updateFunc);
     });
   });
-
-GeoPromise.clearWatch(watchID).then(function() {
-  watchID = null;
-});
 ```
